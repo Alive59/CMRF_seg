@@ -23,9 +23,9 @@ int main (int argc, char** argv) {
     
     lower_outliers_removal<pclPointRGB>(pc.get_cloud());
 
-    double voxel_reso = 0.5f, seed_reso = 4.0f;
-    SV_clustering<pclPointRGB> sv_clustering(voxel_reso, seed_reso);
-    SV_map<pclPointRGB> sv_clusters = sv_generation(pc.get_cloud(), sv_clustering, voxel_reso, seed_reso);
+//    double voxel_reso = 0.5f, seed_reso = 4.0f;
+//    SV_clustering<pclPointRGB> sv_clustering(voxel_reso, seed_reso);
+//    SV_map<pclPointRGB> sv_clusters = sv_generation(pc.get_cloud(), sv_clustering, voxel_reso, seed_reso);
     
     std::this_thread::sleep_for(std::chrono::seconds(2));
     
