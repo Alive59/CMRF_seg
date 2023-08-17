@@ -195,8 +195,8 @@
 			buildPhases = (
 				43096D832A85D22F00F4D23D /* Frameworks */,
 				43096D842A85D22F00F4D23D /* CopyFiles */,
-				43096D822A85D22F00F4D23D /* Sources */,
 				43096D942A85D2CC00F4D23D /* Embed Libraries */,
+				43096D822A85D22F00F4D23D /* Sources */,
 			);
 			buildRules = (
 			);
@@ -380,11 +380,9 @@
 					/usr/local/lib,
 					"$(PROJECT_DIR)",
 					/usr/local/lib/colmap,
-					/usr/local/Cellar/boost/1.81.0_1/lib,
 					/usr/local/Cellar/xz/5.4.3/lib,
 					/usr/local/Cellar/shapelib/1.5.0/lib,
 					/usr/local/Cellar/pcl/1.13.1_1/lib,
-					/usr/local/Cellar/vtk/9.2.6/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,11 +409,9 @@
 					/usr/local/lib,
 					"$(PROJECT_DIR)",
 					/usr/local/lib/colmap,
-					/usr/local/Cellar/boost/1.81.0_1/lib,
 					/usr/local/Cellar/xz/5.4.3/lib,
 					/usr/local/Cellar/shapelib/1.5.0/lib,
 					/usr/local/Cellar/pcl/1.13.1_1/lib,
-					/usr/local/Cellar/vtk/9.2.6/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
