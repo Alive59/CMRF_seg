@@ -13,6 +13,7 @@
 
 #include "algo_in_class.h"
 #include "feature_and_cost.h"
+#include "DFS_search.h"
 
 int main (int argc, char** argv) {
     std::string file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea.ply";
@@ -77,11 +78,12 @@ int main (int argc, char** argv) {
     
     PCT<pclPointLabel>::Ptr label_cloud(new PCT<pclPointLabel>);
 
+    
     //Construct boost graph
     std::vector<vertex_descriptor> sv_vertices;
     std::map<std::uint32_t, std::size_t> sv_vertices_index_map;
 
-    Graph sv_adjacency_graph;
+    Graph sv_adjacency_graph; //Main field
     for (const auto &id : sv_clusters) {
         vertex_descriptor vd = boost::add_vertex(sv_adjacency_graph);
         sv_vertices.push_back(vd);
@@ -191,7 +193,13 @@ int main (int argc, char** argv) {
                 
             }
         }
-        
+    }
+    
+    //DFS test
+    vertex_iterator vBegin, vEnd;
+    for (boost::tie(vBegin, vEnd) = boost::vertices(sv_adjacency_graph); vBegin != vEnd; ++ vBegin) {
+        DFSVisitor vis;
+        boost::depth_first_search(sv_adjacency_graph, boost::visitor(vis));
     }
     
     std::cerr << std::endl << "Alpha expansion..." << std::endl << std::endl;

@@ -105,6 +105,8 @@
 		43096DA42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_surface.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_1/lib/libpcl_surface.1.13.1.dylib; sourceTree = "<group>"; };
 		43096DC52A85D32A00F4D23D /* feature_and_cost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feature_and_cost.h; sourceTree = "<group>"; };
 		43096DC62A85D32A00F4D23D /* algo_in_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algo_in_class.h; sourceTree = "<group>"; };
+		43096DC72A8F5B0B00F4D23D /* DFS_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFS_search.h; sourceTree = "<group>"; };
+		43096DC82A8F5C3700F4D23D /* option_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = option_def.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				43096DC62A85D32A00F4D23D /* algo_in_class.h */,
+				43096DC82A8F5C3700F4D23D /* option_def.h */,
 				43096DC52A85D32A00F4D23D /* feature_and_cost.h */,
 				43096D892A85D22F00F4D23D /* main.cpp */,
+				43096DC72A8F5B0B00F4D23D /* DFS_search.h */,
 			);
 			path = CMRF_seg;
 			sourceTree = "<group>";

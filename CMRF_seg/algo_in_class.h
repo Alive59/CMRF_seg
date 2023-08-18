@@ -9,52 +9,7 @@
 #ifndef algo_in_class_h
 #define algo_in_class_h
 
-#include <ctime>
-#include <cmath>
-#include <vector>
-#include <iostream>
-#include <numeric>
-#include <thread>
-
-#include <CGAL/license/Classification.h>
-#include <CGAL/Simple_cartesian.h>
-#include <CGAL/Classification.h>
-#include <CGAL/Point_set_3.h>
-
-#include <CGAL/boost/graph/alpha_expansion_graphcut.h>
-#include <CGAL/Bbox_3.h>
-#include <CGAL/for_each.h>
-#include <CGAL/Classification/Label_set.h>
-#include <CGAL/property_map.h>
-#include <CGAL/iterator.h>
-
-#ifdef CGAL_LINKED_WITH_TBB
-#include <tbb/parallel_for.h>
-#include <tbb/blocked_range.h>
-#include <tbb/scalable_allocator.h>
-#include <mutex>
-#endif // CGAL_LINKED_WITH_TBB
-
-#include <boost/graph/adjacency_list.hpp>
-
-//PCL
-#include <pcl/console/parse.h>
-#include <pcl/common/common.h>
-#include <pcl/filters/extract_indices.h>
-#include <pcl/point_cloud.h>
-#include <pcl/point_types.h>
-#include <pcl/features/pfh.h>
-#include <pcl/features/fpfh.h>
-#include <pcl/features/normal_3d.h>
-#include <pcl/kdtree/kdtree_flann.h>
-#include <pcl/filters/voxel_grid.h>
-#include <pcl/filters/random_sample.h>
-#include <pcl/io/pcd_io.h>
-#include <pcl/io/ply_io.h>
-#include <pcl/filters/radius_outlier_removal.h>
-#include <pcl/filters/statistical_outlier_removal.h>
-#include <pcl/segmentation/supervoxel_clustering.h>
-#include <pcl/segmentation/lccp_segmentation.h>
+#include "option_def.h"
 
 //CGAL
 namespace Classification = CGAL::Classification;
@@ -80,6 +35,7 @@ typedef Classification::Point_set_feature_generator<Kernel, Point_set, Pmap>    
 typedef Classification::ETHZ::Random_forest_classifier
     Classifier;
 
+
 //PCL
 template <typename pointT>
 using PCT = pcl::PointCloud<pointT>;
@@ -96,6 +52,7 @@ typedef pcl::PointNormal pclPointN;
 typedef pcl::PointXYZL pclPointLabel;
 typedef pcl::PointXYZRGBL pclPointRGBLabel;
 typedef pcl::Normal pclN;
+
 
 //Boost
 struct Vertex_property
@@ -118,6 +75,7 @@ using GT = boost::graph_traits<Graph>;
 using vertex_descriptor = GT::vertex_descriptor;
 using edge_descriptor = GT::edge_descriptor;
 
+using vertex_iterator = GT::vertex_iterator;
 
 
 void pts_read(std::string pts_path, Point_set &pts);
