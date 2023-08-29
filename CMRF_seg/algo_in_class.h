@@ -895,7 +895,7 @@ double std_vector_euclidean_dist(std::vector<T> &v1, std::vector<T> &v2) {
         //weighted
         if (idx == 0) {
             accumulated_result += (v1[idx] - v2[idx]) *
-                                    (v1[idx] - v2[idx]) * pow(3, 2);
+                                    (v1[idx] - v2[idx]) * pow(8, 2);
 //        } else if (idx == 1) {
 //            accumulated_result += (v1[idx] - v2[idx]) *
 //                                    (v1[idx] - v2[idx]) * pow(2, 2);
