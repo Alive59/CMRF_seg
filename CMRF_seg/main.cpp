@@ -16,7 +16,11 @@
 #include "DFS_search.h"
 
 int main (int argc, char** argv) {
-    std::string file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea.ply";
+    std::string root_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/";
+    std::string file_name = "fused_minpxl2_2xsr_defParam_testArea02";
+    std::string file_path = root_path + file_name + ".ply";
+    
+//    std::string file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea.ply";
     std::string filtered_file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias/featureBias_testArea.ply";
     std::string vector_file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/20230325_grid30/vector_file.txt";
 
@@ -164,8 +168,9 @@ int main (int argc, char** argv) {
         }
     }
     
+    std::string init_path = root_path + file_name + "_init.ply";
     pcl::PLYWriter writer;
-    writer.write("/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea_init.ply", *label_cloud, true);
+    writer.write(init_path, *label_cloud, true);
     
     
     //pairwise connection
@@ -188,7 +193,7 @@ int main (int argc, char** argv) {
 //                std::cout <<feature_dist <<"\n";
                 
                 //Logistic Projection
-                sv_adjacency_graph[ed].weight = 1 - (1 / (1 + exp(-1 * (feature_dist - 1))));
+                sv_adjacency_graph[ed].weight = 1 - (1 / (1 + exp(-1 * (0.5 * feature_dist - 1))));
 //                std::cout <<sv_adjacency_graph[ed].weight <<"\n\n";
                 
             }
@@ -196,11 +201,12 @@ int main (int argc, char** argv) {
     }
     
     //DFS test
-    vertex_iterator vBegin, vEnd;
-    for (boost::tie(vBegin, vEnd) = boost::vertices(sv_adjacency_graph); vBegin != vEnd; ++ vBegin) {
-        DFSVisitor vis;
-        boost::depth_first_search(sv_adjacency_graph, boost::visitor(vis));
-    }
+//    vertex_iterator vBegin, vEnd;
+//    for (boost::tie(vBegin, vEnd) = boost::vertices(sv_adjacency_graph); vBegin != vEnd; ++ vBegin) {
+//        DFSVisitor vis;
+//        std::cout <<sv_adjacency_graph[*vBegin].vid <<"\n";
+//        boost::depth_first_search(sv_adjacency_graph, boost::visitor(vis));
+//    }
     
     std::cerr << std::endl << "Alpha expansion..." << std::endl << std::endl;
     CGAL::alpha_expansion_graphcut(sv_adjacency_graph,
@@ -223,9 +229,11 @@ int main (int argc, char** argv) {
         }
     }
     
+    std::string expand_path = root_path + file_name + "_expansion.ply",
+                ground_path = root_path + file_name + "_ground.ply";
     pcl::PLYWriter expansion_writer;
-    expansion_writer.write("/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea_expansion.ply", *expansion_label_cloud, true);
-    expansion_writer.write("/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea_ground.ply", *expansion_ground_cloud, true);
+    expansion_writer.write(expand_path, *expansion_label_cloud, true);
+    expansion_writer.write(ground_path, *expansion_ground_cloud, true);
     
     
     return 0;
