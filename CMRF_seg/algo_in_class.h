@@ -961,7 +961,31 @@ double voxel_normal_dist(typename pcl::Supervoxel<pointT>::Ptr &sv1,
                     n2 = pcl_normal_to_eigen_vector(sv2->normal_);
     double normal_angle = eigen_vector3d_angle(n1, n2);
     
-    return (normal_angle / 57.2957795) / M_PI;
+    return normal_angle / 57.2957795;
+}
+
+/** \brief Compute the aggregated RGB value for an individual supervoxel. */
+template<typename pointT>
+double sv_avg_color_value(typename pcl::Supervoxel<pointT>::Ptr &sv,
+                          typename PCT<pointT>::Ptr &original_cloud) {
+    pcl::KdTreeFLANN<pointT> rgb_tree;
+    int k = 1;
+    std::vector<int> pointIdxKNNSearch(k);
+    std::vector<float> pointKNNSquaredDistance(k);
+    rgb_tree.setInputCloud(original_cloud);
+    
+    double rgb_val = 0.f;
+    for (const auto &p : *sv->voxels_) {
+        pointT searchPoint(p.x, p.y, p.z);
+        
+        if (rgb_tree.nearestKSearch(searchPoint, k, pointIdxKNNSearch, pointKNNSquaredDistance) > 0)
+            rgb_val += (original_cloud->points[pointIdxKNNSearch[0]].r + original_cloud->points[pointIdxKNNSearch[0]].g + original_cloud->points[pointIdxKNNSearch[0]].b) / 3.0;
+        
+//        std::cout <<rgb_val <<std::endl;
+    }
+    
+    double avg_rgb_val = rgb_val / static_cast<double>(sv->voxels_->size());
+    return avg_rgb_val;
 }
 
 /** \brief Identify outliers in a vector */
