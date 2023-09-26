@@ -8,40 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		43096D8A2A85D22F00F4D23D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43096D892A85D22F00F4D23D /* main.cpp */; };
-		43096D922A85D2CC00F4D23D /* liblzma.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D912A85D2CC00F4D23D /* liblzma.5.dylib */; };
-		43096D932A85D2CC00F4D23D /* liblzma.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D912A85D2CC00F4D23D /* liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DA52A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D952A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib */; };
-		43096DA62A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D952A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DA72A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D962A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib */; };
-		43096DA82A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D962A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DA92A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D972A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib */; };
-		43096DAA2A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D972A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DAB2A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D982A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib */; };
-		43096DAC2A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D982A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DAD2A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D992A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib */; };
-		43096DAE2A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D992A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DAF2A85D2F000F4D23D /* libpcl_common.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9A2A85D2F000F4D23D /* libpcl_common.1.13.1.dylib */; };
-		43096DB02A85D2F000F4D23D /* libpcl_common.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9A2A85D2F000F4D23D /* libpcl_common.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DB12A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9B2A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib */; };
-		43096DB22A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9B2A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DB32A85D2F000F4D23D /* libpcl_search.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9C2A85D2F000F4D23D /* libpcl_search.1.13.1.dylib */; };
-		43096DB42A85D2F000F4D23D /* libpcl_search.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9C2A85D2F000F4D23D /* libpcl_search.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DB52A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9D2A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib */; };
-		43096DB62A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9D2A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DB72A85D2F000F4D23D /* libpcl_io.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9E2A85D2F000F4D23D /* libpcl_io.1.13.1.dylib */; };
-		43096DB82A85D2F000F4D23D /* libpcl_io.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9E2A85D2F000F4D23D /* libpcl_io.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DB92A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096D9F2A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib */; };
-		43096DBA2A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096D9F2A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DBB2A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096DA02A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib */; };
-		43096DBC2A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096DA02A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DBD2A85D2F000F4D23D /* libpcl_features.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096DA12A85D2F000F4D23D /* libpcl_features.1.13.1.dylib */; };
-		43096DBE2A85D2F000F4D23D /* libpcl_features.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096DA12A85D2F000F4D23D /* libpcl_features.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DBF2A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096DA22A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib */; };
-		43096DC02A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096DA22A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DC12A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096DA32A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib */; };
-		43096DC22A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096DA32A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		43096DC32A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43096DA42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib */; };
-		43096DC42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43096DA42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF523B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF522B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib */; };
+		43DF523C2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF522B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF523D2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF522C2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib */; };
+		43DF523E2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF522C2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF523F2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF522D2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib */; };
+		43DF52402AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF522D2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52412AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF522E2AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib */; };
+		43DF52422AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF522E2AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52432AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF522F2AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib */; };
+		43DF52442AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF522F2AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52452AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52302AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib */; };
+		43DF52462AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52302AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52472AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52312AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib */; };
+		43DF52482AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52312AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52492AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52322AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib */; };
+		43DF524A2AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52322AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF524B2AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52332AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib */; };
+		43DF524C2AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52332AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF524D2AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52342AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib */; };
+		43DF524E2AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52342AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF524F2AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52352AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib */; };
+		43DF52502AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52352AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52512AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52362AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib */; };
+		43DF52522AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52362AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52532AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52372AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib */; };
+		43DF52542AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52372AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52552AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52382AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib */; };
+		43DF52562AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52382AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52572AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF52392AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib */; };
+		43DF52582AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF52392AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF52592AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF523A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib */; };
+		43DF525A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF523A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		43DF525C2AC17D8000EC3F96 /* liblzma.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF525B2AC17D8000EC3F96 /* liblzma.5.dylib */; };
+		43DF525D2AC17D8000EC3F96 /* liblzma.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 43DF525B2AC17D8000EC3F96 /* liblzma.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,23 +60,23 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				43096DAE2A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib in Embed Libraries */,
-				43096DB62A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib in Embed Libraries */,
-				43096DBE2A85D2F000F4D23D /* libpcl_features.1.13.1.dylib in Embed Libraries */,
-				43096DAC2A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib in Embed Libraries */,
-				43096DBC2A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib in Embed Libraries */,
-				43096D932A85D2CC00F4D23D /* liblzma.5.dylib in Embed Libraries */,
-				43096DC42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib in Embed Libraries */,
-				43096DB42A85D2F000F4D23D /* libpcl_search.1.13.1.dylib in Embed Libraries */,
-				43096DA62A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib in Embed Libraries */,
-				43096DB22A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib in Embed Libraries */,
-				43096DBA2A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib in Embed Libraries */,
-				43096DC22A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib in Embed Libraries */,
-				43096DA82A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib in Embed Libraries */,
-				43096DC02A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib in Embed Libraries */,
-				43096DAA2A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib in Embed Libraries */,
-				43096DB02A85D2F000F4D23D /* libpcl_common.1.13.1.dylib in Embed Libraries */,
-				43096DB82A85D2F000F4D23D /* libpcl_io.1.13.1.dylib in Embed Libraries */,
+				43DF52522AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib in Embed Libraries */,
+				43DF523E2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib in Embed Libraries */,
+				43DF52542AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib in Embed Libraries */,
+				43DF52402AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib in Embed Libraries */,
+				43DF523C2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib in Embed Libraries */,
+				43DF524E2AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib in Embed Libraries */,
+				43DF525D2AC17D8000EC3F96 /* liblzma.5.dylib in Embed Libraries */,
+				43DF52582AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib in Embed Libraries */,
+				43DF52482AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib in Embed Libraries */,
+				43DF52422AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib in Embed Libraries */,
+				43DF525A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib in Embed Libraries */,
+				43DF524C2AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib in Embed Libraries */,
+				43DF52442AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib in Embed Libraries */,
+				43DF52502AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib in Embed Libraries */,
+				43DF52562AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib in Embed Libraries */,
+				43DF52462AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib in Embed Libraries */,
+				43DF524A2AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +107,23 @@
 		43096DC62A85D32A00F4D23D /* algo_in_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algo_in_class.h; sourceTree = "<group>"; };
 		43096DC72A8F5B0B00F4D23D /* DFS_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFS_search.h; sourceTree = "<group>"; };
 		43096DC82A8F5C3700F4D23D /* option_def.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = option_def.h; sourceTree = "<group>"; };
+		43DF522B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_surface.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_surface.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF522C2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_features.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_features.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF522D2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_keypoints.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_keypoints.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF522E2AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_io.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_io.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF522F2AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_recognition.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_recognition.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52302AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_common.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_common.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52312AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_registration.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_registration.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52322AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_simulation.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_simulation.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52332AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_visualization.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_visualization.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52342AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_filters.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_filters.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52352AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_sample_consensus.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_sample_consensus.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52362AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_kdtree.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_kdtree.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52372AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_octree.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_octree.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52382AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_segmentation.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_segmentation.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF52392AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_search.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_search.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF523A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_io_ply.1.13.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.13.1_2/lib/libpcl_io_ply.1.13.1.dylib; sourceTree = "<group>"; };
+		43DF525B2AC17D8000EC3F96 /* liblzma.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liblzma.5.dylib; path = ../../../../../usr/local/Cellar/xz/5.4.4/lib/liblzma.5.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,23 +131,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43096DAD2A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib in Frameworks */,
-				43096DB52A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib in Frameworks */,
-				43096DBD2A85D2F000F4D23D /* libpcl_features.1.13.1.dylib in Frameworks */,
-				43096DAB2A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib in Frameworks */,
-				43096DBB2A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib in Frameworks */,
-				43096D922A85D2CC00F4D23D /* liblzma.5.dylib in Frameworks */,
-				43096DC32A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib in Frameworks */,
-				43096DB32A85D2F000F4D23D /* libpcl_search.1.13.1.dylib in Frameworks */,
-				43096DA52A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib in Frameworks */,
-				43096DB12A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib in Frameworks */,
-				43096DB92A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib in Frameworks */,
-				43096DC12A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib in Frameworks */,
-				43096DA72A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib in Frameworks */,
-				43096DBF2A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib in Frameworks */,
-				43096DA92A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib in Frameworks */,
-				43096DAF2A85D2F000F4D23D /* libpcl_common.1.13.1.dylib in Frameworks */,
-				43096DB72A85D2F000F4D23D /* libpcl_io.1.13.1.dylib in Frameworks */,
+				43DF52512AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib in Frameworks */,
+				43DF523D2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib in Frameworks */,
+				43DF52532AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib in Frameworks */,
+				43DF523F2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib in Frameworks */,
+				43DF523B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib in Frameworks */,
+				43DF524D2AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib in Frameworks */,
+				43DF525C2AC17D8000EC3F96 /* liblzma.5.dylib in Frameworks */,
+				43DF52572AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib in Frameworks */,
+				43DF52472AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib in Frameworks */,
+				43DF52412AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib in Frameworks */,
+				43DF52592AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib in Frameworks */,
+				43DF524B2AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib in Frameworks */,
+				43DF52432AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib in Frameworks */,
+				43DF524F2AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib in Frameworks */,
+				43DF52552AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib in Frameworks */,
+				43DF52452AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib in Frameworks */,
+				43DF52492AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,22 +186,39 @@
 		43096D902A85D2CC00F4D23D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43DF525B2AC17D8000EC3F96 /* liblzma.5.dylib */,
 				43096D9A2A85D2F000F4D23D /* libpcl_common.1.13.1.dylib */,
+				43DF52302AC17D6100EC3F96 /* libpcl_common.1.13.1.dylib */,
 				43096DA12A85D2F000F4D23D /* libpcl_features.1.13.1.dylib */,
 				43096D9F2A85D2F000F4D23D /* libpcl_filters.1.13.1.dylib */,
 				43096D9D2A85D2F000F4D23D /* libpcl_io_ply.1.13.1.dylib */,
+				43DF52342AC17D6100EC3F96 /* libpcl_filters.1.13.1.dylib */,
+				43DF523A2AC17D6100EC3F96 /* libpcl_io_ply.1.13.1.dylib */,
 				43096D9E2A85D2F000F4D23D /* libpcl_io.1.13.1.dylib */,
 				43096D982A85D2F000F4D23D /* libpcl_kdtree.1.13.1.dylib */,
+				43DF522E2AC17D6100EC3F96 /* libpcl_io.1.13.1.dylib */,
+				43DF52362AC17D6100EC3F96 /* libpcl_kdtree.1.13.1.dylib */,
 				43096DA02A85D2F000F4D23D /* libpcl_keypoints.1.13.1.dylib */,
 				43096D972A85D2F000F4D23D /* libpcl_octree.1.13.1.dylib */,
+				43DF52372AC17D6100EC3F96 /* libpcl_octree.1.13.1.dylib */,
 				43096DA22A85D2F000F4D23D /* libpcl_recognition.1.13.1.dylib */,
 				43096D9B2A85D2F000F4D23D /* libpcl_registration.1.13.1.dylib */,
 				43096D952A85D2F000F4D23D /* libpcl_sample_consensus.1.13.1.dylib */,
 				43096D9C2A85D2F000F4D23D /* libpcl_search.1.13.1.dylib */,
+				43DF52392AC17D6100EC3F96 /* libpcl_search.1.13.1.dylib */,
 				43096DA32A85D2F000F4D23D /* libpcl_segmentation.1.13.1.dylib */,
+				43DF52352AC17D6100EC3F96 /* libpcl_sample_consensus.1.13.1.dylib */,
+				43DF52382AC17D6100EC3F96 /* libpcl_segmentation.1.13.1.dylib */,
 				43096D962A85D2F000F4D23D /* libpcl_simulation.1.13.1.dylib */,
+				43DF522C2AC17D6100EC3F96 /* libpcl_features.1.13.1.dylib */,
+				43DF522D2AC17D6100EC3F96 /* libpcl_keypoints.1.13.1.dylib */,
+				43DF522F2AC17D6100EC3F96 /* libpcl_recognition.1.13.1.dylib */,
+				43DF52312AC17D6100EC3F96 /* libpcl_registration.1.13.1.dylib */,
+				43DF52322AC17D6100EC3F96 /* libpcl_simulation.1.13.1.dylib */,
 				43096DA42A85D2F000F4D23D /* libpcl_surface.1.13.1.dylib */,
 				43096D992A85D2F000F4D23D /* libpcl_visualization.1.13.1.dylib */,
+				43DF522B2AC17D6100EC3F96 /* libpcl_surface.1.13.1.dylib */,
+				43DF52332AC17D6100EC3F96 /* libpcl_visualization.1.13.1.dylib */,
 				43096D912A85D2CC00F4D23D /* liblzma.5.dylib */,
 			);
 			name = Frameworks;
@@ -387,6 +421,8 @@
 					/usr/local/Cellar/xz/5.4.3/lib,
 					/usr/local/Cellar/shapelib/1.5.0/lib,
 					/usr/local/Cellar/pcl/1.13.1_1/lib,
+					/usr/local/Cellar/pcl/1.13.1_2/lib,
+					/usr/local/Cellar/xz/5.4.4/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +452,8 @@
 					/usr/local/Cellar/xz/5.4.3/lib,
 					/usr/local/Cellar/shapelib/1.5.0/lib,
 					/usr/local/Cellar/pcl/1.13.1_1/lib,
+					/usr/local/Cellar/pcl/1.13.1_2/lib,
+					/usr/local/Cellar/xz/5.4.4/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

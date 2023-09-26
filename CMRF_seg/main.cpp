@@ -17,7 +17,7 @@
 
 int main (int argc, char** argv) {
     std::string root_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/";
-    std::string file_name = "fused_minpxl2_2xsr_defParam_testArea02";
+    std::string file_name = "fused_minpxl2_2xsr_defParam_testArea";
     std::string file_path = root_path + file_name + ".ply";
     
 //    std::string file_path = "/Users/konialive/Library/CloudStorage/GoogleDrive-lfliao0525@gmail.com/My Drive/fused_for_seg/SHRed/fixed_focal_length_winSize5_feature_bias_2xsr/fused_minpxl2_2xsr_defParam_testArea.ply";
@@ -28,7 +28,7 @@ int main (int argc, char** argv) {
     
     lower_outliers_removal<pclPointRGB>(pc.get_cloud());
 
-    double voxel_reso = 0.5f, seed_reso = 3.0f;
+    double voxel_reso = 0.5f, seed_reso = 2.0f;
     SV_clustering<pclPointRGB> sv_clustering(voxel_reso, seed_reso);
     SV_map<pclPointRGB> sv_clusters = sv_generation(pc.get_cloud(), sv_clustering, voxel_reso, seed_reso);
     
@@ -186,11 +186,22 @@ int main (int argc, char** argv) {
                 edge_descriptor ed = boost::add_edge(sv_vertices[first_vertex_index], sv_vertices[second_vertex_index], sv_adjacency_graph).first;
                 
                 //weight initialization
-                double feature_dist = std_vector_euclidean_dist(
-                    feature_vector[edge.first - 1],
-                    feature_vector[edge.second - 1]
-                );
+//                double feature_dist = std_vector_euclidean_dist(
+//                    feature_vector[edge.first - 1],
+//                    feature_vector[edge.second - 1]
+//                );
 //                std::cout <<feature_dist <<"\n";
+                
+                //original weight definition
+//                double lcolor = sv_avg_color_value<pclPointRGB>(sv_clusters.find(edge.first)->second, pc.get_cloud()), rcolor = sv_avg_color_value<pclPointRGB>(sv_clusters.find(edge.second)->second, pc.get_cloud());
+                double color_dist = abs(feature_vector[edge.first - 1][4] -
+                                        feature_vector[edge.second - 1][4]);
+                double spatial_dist = point_euclidean_dist(sv_clusters.find(edge.first)->second->centroid_,
+                                         sv_clusters.find(edge.second)->second->centroid_) / seed_reso;
+                double normal_dist = voxel_normal_dist<pclPointRGB>(sv_clusters.find(edge.first)->second,
+                                                   sv_clusters.find(edge.second)->second);
+                double feature_dist = color_dist * 0.02 + spatial_dist * 0.05 + normal_dist;
+                
                 
                 //Logistic Projection
                 sv_adjacency_graph[ed].weight = 1 - (1 / (1 + exp(-1 * (0.5 * feature_dist - 1))));

@@ -15,6 +15,8 @@
 #include <numeric>
 #include <thread>
 
+#include <type_traits>
+
 #include <CGAL/license/Classification.h>
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/Classification.h>
